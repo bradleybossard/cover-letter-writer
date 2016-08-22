@@ -6,12 +6,17 @@
 </head>
 <body>
   <div ng-app="myApp" ng-controller="myCtrl">
-    <textarea rows="10" cols="80">
-    Dear {{ companyName }},
+    <textarea rows="20" cols="80">
+Dear {{ companyName }},
 
-    My {{ skill1 }}, {{ skill2 }}
+My {{ skill1 }}, {{ skill2 }} and {{ skill3 }} would make me an excellent addition to your team as a {{ position }}.
 
-    Find attached a copy of my resume, and I look forward to hearing from you soon.
+Find attached a copy of my resume, and I look forward to hearing from you soon.
+
+{{ closing }},
+
+{{ signature }}
+
     </textarea>
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>  
