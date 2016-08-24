@@ -7,7 +7,7 @@
 </head>
 <body>
   <div ng-app="myApp" ng-controller="myCtrl" class="container">
-    <div class="row">Skills</div>
+    <h3>Skills</h3>
     <div class="row">
       <select name="repeatSelect" id="repeatSelect" ng-model="skill1">
         <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
@@ -24,7 +24,7 @@
 
     <hr>
 
-    <div class="row">Roles</div>
+    <h3>Roles</h3>
     <div class="row">
       <select name="repeatSelect" id="repeatSelect" ng-model="role">
         <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
@@ -38,6 +38,8 @@
 Dear {{ companyName }},
 
 My {{ skill1 }}, {{ skill2 }} and {{ skill3 }} would make me {{ role }} to your team as a {{ position }}.
+
+During
 
 Find attached a copy of my resume, and I look forward to hearing from you soon.
 
