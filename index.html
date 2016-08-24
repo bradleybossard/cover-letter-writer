@@ -6,6 +6,23 @@
 </head>
 <body>
   <div ng-app="myApp" ng-controller="myCtrl">
+
+    <div>
+      <select name="repeatSelect" id="repeatSelect" ng-model="skill1">
+        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+      </select>
+
+      <select name="repeatSelect" id="repeatSelect" ng-model="skill2">
+        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+      </select>
+
+      <select name="repeatSelect" id="repeatSelect" ng-model="skill3">
+        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+      </select>
+    </div>
+
+
+
     <textarea rows="20" cols="80">
 Dear {{ companyName }},
 

@@ -1,5 +1,13 @@
 var app = angular.module('myApp', [])
 .controller('myCtrl', function($scope) {
+
+  $scope.skills = [
+  { id: 0, name: 'diverse technical background'},
+  { id: 1, name: 'attention to detail'},
+  { id: 2, name: 'great communication skills'},
+  //{ id: , name: ''}
+  ];
+
   $scope.companyName= "Google";
   $scope.skill1 = "diverse technical background";
   $scope.skill2 = "attention to detail";
