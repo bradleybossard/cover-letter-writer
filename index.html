@@ -7,8 +7,8 @@
 </head>
 <body>
   <div ng-app="myApp" ng-controller="myCtrl" class="container">
-
-    <div>
+    <div class="row">Skills</div>
+    <div class="row">
       <select name="repeatSelect" id="repeatSelect" ng-model="skill1">
         <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
       </select>
@@ -22,8 +22,12 @@
       </select>
     </div>
 
+    <div class="row"></div>
+
+    <hr>
 
 
+    <div class="row">
     <textarea rows="20" cols="80">
 Dear {{ companyName }},
 
@@ -36,6 +40,7 @@ Find attached a copy of my resume, and I look forward to hearing from you soon.
 {{ signature }}
 
     </textarea>
+    </div>
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>  
 

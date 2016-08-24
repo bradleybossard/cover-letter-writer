@@ -9,9 +9,9 @@ var app = angular.module('myApp', [])
   ];
 
   $scope.companyName= "Google";
-  $scope.skill1 = $scope.skills[0];
-  $scope.skill2 = $scope.skills[1];
-  $scope.skill3 = $scope.skills[2];
+  $scope.skill1 = $scope.skills[0].name;
+  $scope.skill2 = $scope.skills[1].name;
+  $scope.skill3 = $scope.skills[2].name;
   $scope.positiveRole = "an excellent addition";  // a strong candidate
   $scope.position = "Software Engineer";
   $scope.closing = "Regards";
