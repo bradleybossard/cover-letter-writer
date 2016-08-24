@@ -9,39 +9,51 @@
   <div ng-app="myApp" ng-controller="myCtrl" class="container">
 
     <h3>Company</h3>
-    <div class="row">
+    <div class="form-group">
       <input type="text" class="form-control" placeholder="Company Name" ng-model="companyName">
     </div>
 
-
     <h3>Skills</h3>
-    <div class="row">
-      <div class="form-group">
-        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill1">
-          <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-        </select>
-      </div>
+    <div class="form-group">
+      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill1">
+        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+      </select>
+    </div>
 
-      <div class="form-group">
-        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill2">
-          <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-        </select>
-      </div>
+    <div class="form-group">
+      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill2">
+        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+      </select>
+    </div>
 
-      <div class="form-group">
-        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill3">
-          <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-        </select>
-      </div>
+    <div class="form-group">
+      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill3">
+        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+      </select>
     </div>
 
     <h3>Roles</h3>
-    <div class="row">
-      <div class="form-group">
-        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="role">
-          <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
-        </select>
-      </div>
+    <div class="form-group">
+      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="role">
+        <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
+      </select>
+    </div>
+
+    <h3>Position</h3>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Position" ng-model="position">
+    </div>
+
+    <h3>Closing</h3>
+    <div class="form-group">
+      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="closing">
+        <option ng-repeat="closing in closings" value="{{closing.name}}">{{closing.name}}</option>
+      </select>
+    </div>
+    
+    <h3>Signature</h3>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Signature" ng-model="signature">
     </div>
 
     <div class="row">
