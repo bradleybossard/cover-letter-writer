@@ -22,16 +22,22 @@
       </select>
     </div>
 
-    <div class="row"></div>
-
     <hr>
+
+    <div class="row">Roles</div>
+    <div class="row">
+      <select name="repeatSelect" id="repeatSelect" ng-model="role">
+        <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
+      </select>
+    </div>
+
 
 
     <div class="row">
     <textarea rows="20" cols="80">
 Dear {{ companyName }},
 
-My {{ skill1 }}, {{ skill2 }} and {{ skill3 }} would make me {{ positiveRole }} to your team as a {{ position }}.
+My {{ skill1 }}, {{ skill2 }} and {{ skill3 }} would make me {{ role }} to your team as a {{ position }}.
 
 Find attached a copy of my resume, and I look forward to hearing from you soon.
 

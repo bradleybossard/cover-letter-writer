@@ -8,11 +8,16 @@ var app = angular.module('myApp', [])
   //{ id: , name: ''}
   ];
 
+  $scope.roles = [
+  { id: 0, name: 'an excellent addition'},
+  { id: 1, name: 'a strong candidate'},
+  ]
+
   $scope.companyName= "Google";
   $scope.skill1 = $scope.skills[0].name;
   $scope.skill2 = $scope.skills[1].name;
   $scope.skill3 = $scope.skills[2].name;
-  $scope.positiveRole = "an excellent addition";  // a strong candidate
+  $scope.role = $scope.roles[0].name;
   $scope.position = "Software Engineer";
   $scope.closing = "Regards";
   $scope.signature = "Bradley";
