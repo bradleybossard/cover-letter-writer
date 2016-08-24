@@ -16,26 +16,32 @@
 
     <h3>Skills</h3>
     <div class="row">
-      <select name="repeatSelect" id="repeatSelect" ng-model="skill1">
-        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-      </select>
+      <div class="form-group">
+        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill1">
+          <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+        </select>
+      </div>
 
-      <select name="repeatSelect" id="repeatSelect" ng-model="skill2">
-        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-      </select>
+      <div class="form-group">
+        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill2">
+          <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+        </select>
+      </div>
 
-      <select name="repeatSelect" id="repeatSelect" ng-model="skill3">
-        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-      </select>
+      <div class="form-group">
+        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill3">
+          <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+        </select>
+      </div>
     </div>
-
-    <hr>
 
     <h3>Roles</h3>
     <div class="row">
-      <select name="repeatSelect" id="repeatSelect" ng-model="role">
-        <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
-      </select>
+      <div class="form-group">
+        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="role">
+          <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
+        </select>
+      </div>
     </div>
 
     <div class="row">
@@ -44,7 +50,7 @@ Dear {{ companyName }},
 
 My {{ skill1 }}, {{ skill2 }} and {{ skill3 }} would make me {{ role }} to your team as a {{ position }}.
 
-For the past ten years, including 6 at Google, I have been exposed to a wide range of technologies, and for the past 5 years or so, focused in on Frontend browser development.  Most recently, I laid out the architecture for an Angular/Django REST app for running dental practices, and have been studying React and Webpack and building small projects with them.
+For the past ten years, including five at Google, I have been exposed to a wide range of technologies.  Most recently focused in on Frontend browser development.  Most recently, I laid out the architecture for an Angular/Django REST app for running dental practices, and have been studying React and Webpack and building small projects with them.
 
 Find attached a copy of my resume, and I look forward to hearing from you soon.
 
