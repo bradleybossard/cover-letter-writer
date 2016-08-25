@@ -7,60 +7,65 @@
 </head>
 <body>
   <div ng-app="myApp" ng-controller="myCtrl" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Company</h5>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Company Name" ng-model="companyName">
+        </div>
 
-    <h5>Company</h5>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Company Name" ng-model="companyName">
-    </div>
+        <h5>Skills</h5>
+        <div class="form-group">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill1">
+            <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+          </select>
+        </div>
 
-    <h5>Skills</h5>
-    <div class="form-group">
-      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill1">
-        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-      </select>
-    </div>
+        <div class="form-group">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill2">
+            <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+          </select>
+        </div>
 
-    <div class="form-group">
-      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill2">
-        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-      </select>
-    </div>
+        <div class="form-group">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill3">
+            <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
+          </select>
+        </div>
 
-    <div class="form-group">
-      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill3">
-        <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
-      </select>
-    </div>
+        <h5>Roles</h5>
+        <div class="form-group">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="role">
+            <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
+          </select>
+        </div>
+      </div>
 
-    <h5>Roles</h5>
-    <div class="form-group">
-      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="role">
-        <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
-      </select>
-    </div>
+      <div class="col-md-6">
+        <h5>Position</h5>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Position" ng-model="position">
+        </div>
 
-    <h5>Position</h5>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Position" ng-model="position">
-    </div>
-
-    <h5>Closing</h5>
-    <div class="form-group">
-      <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="closing">
-        <option ng-repeat="closing in closings" value="{{closing.name}}">{{closing.name}}</option>
-      </select>
-    </div>
-    
-    <h5>Signature</h5>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Signature" ng-model="signature">
+        <h5>Closing</h5>
+        <div class="form-group">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="closing">
+            <option ng-repeat="closing in closings" value="{{closing.name}}">{{closing.name}}</option>
+          </select>
+        </div>
+        
+        <h5>Signature</h5>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Signature" ng-model="signature">
+        </div>
+      </div>
     </div>
 
     <div class="row">
     <textarea rows="20" cols="80">
 Dear {{ companyName }},
 
-My {{ skill1 }}, {{ skill2 }} and {{ skill3 }} make me {{ role }} {{ position }}.
+My {{ skill1 }}, {{ skill2 }} and {{ skill3 }} {{ role }} {{ position }}.
 
 {{ body1 }} {{ body2 }} {{ body3 }}
 
