@@ -1,16 +1,6 @@
 var app = angular.module('myApp', [])
 .controller('myCtrl', function($scope, $http) {
 
-  $scope.skills = [
-    { id: 0, name: 'diverse technical background'},
-    { id: 1, name: 'attention to detail'},
-    { id: 2, name: 'great communication skills'},
-    { id: 3, name: 'frontend/fullstack experience'},
-    { id: 4, name: 'desire to wear many hats'}, 
-    { id: 5, name: 'desire to change the world'}, 
-    //{ id: , name: ''}
-  ];
-
   $scope.roles = [
     { id: 0, name: 'would make me an excellent addition to your team as a'},
     { id: 1, name: 'make me a strong candidate for the opening of'},
@@ -25,9 +15,6 @@ var app = angular.module('myApp', [])
   ];
 
   $scope.companyName= "Google";
-  $scope.skill1 = $scope.skills[0].name;
-  $scope.skill2 = $scope.skills[1].name;
-  $scope.skill3 = $scope.skills[2].name;
   $scope.role = $scope.roles[0].name;
   $scope.body1 = $scope.bodies[0].name;
   $scope.body2 = $scope.bodies[1].name;
@@ -38,6 +25,10 @@ var app = angular.module('myApp', [])
 
   $http.get('props.json').then(
       function (res) {
+        $scope.skills = res.data.skills;
+        $scope.skill1 = $scope.skills[0].name;
+        $scope.skill2 = $scope.skills[1].name;
+        $scope.skill3 = $scope.skills[2].name;
         $scope.closings = res.data.closings;
         $scope.closing = $scope.closings[0].name;
       },

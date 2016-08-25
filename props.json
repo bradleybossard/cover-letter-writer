@@ -4,6 +4,14 @@
   { "name": "Regards"},
   { "name": "Best"},
   { "name": "Cheers"}
-]
+],
+  "skills": [
+    { "name": "diverse technical background"},
+    { "name": "attention to detail"},
+    { "name": "great communication skills"},
+    { "name": "frontend/fullstack experience"},
+    { "name": "desire to wear many hats"}, 
+    { "name": "desire to change the world"}
+  ]
 }
 
