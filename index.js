@@ -7,6 +7,7 @@ var app = angular.module('myApp', [])
     { id: 2, name: 'great communication skills'},
     { id: 3, name: 'frontend/fullstack experience'},
     { id: 4, name: 'desire to wear many hats'}, 
+    { id: 5, name: 'desire to change the world'}, 
     //{ id: , name: ''}
   ];
 
