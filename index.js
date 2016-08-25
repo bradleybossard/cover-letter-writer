@@ -1,5 +1,5 @@
 var app = angular.module('myApp', [])
-.controller('myCtrl', function($scope) {
+.controller('myCtrl', function($scope, $http) {
 
   $scope.skills = [
     { id: 0, name: 'diverse technical background'},
@@ -24,13 +24,6 @@ var app = angular.module('myApp', [])
     { id: 3, name: 'Most recently, I laid out the architecture for an Angular/Django REST app for running dental practices.'},
   ];
 
-  $scope.closings = [
-    { id: 0, name: 'Sincerely'},
-    { id: 1, name: 'Regards'},
-    { id: 2, name: 'Best'},
-    { id: 3, name: 'Cheers'},
-  ];
-
   $scope.companyName= "Google";
   $scope.skill1 = $scope.skills[0].name;
   $scope.skill2 = $scope.skills[1].name;
@@ -41,6 +34,14 @@ var app = angular.module('myApp', [])
   $scope.body3 = $scope.bodies[2].name;
 
   $scope.position = "Software Engineer";
-  $scope.closing = $scope.closings[0].name;
   $scope.signature = "Bradley";
+
+  $http.get('props.json').then(
+      function (res) {
+        $scope.closings = res.data.closings;
+        $scope.closing = $scope.closings[0].name;
+      },
+      function () {
+        console.log("Error fetching json");
+      });
 });
