@@ -14,12 +14,6 @@
     { "name": "Particularly, I  feel my most relevant experience to the advertised position includesMost recently focused in on Frontend browser development."},
     { "name": "Most recently, I laid out the architecture for an Angular/Django REST app for running dental practices."}
   ],
-  "closings": [
-  { "name": "Sincerely"},
-  { "name": "Regards"},
-  { "name": "Best"},
-  { "name": "Cheers"}
-],
   "skills": [
     { "name": "diverse technical background"},
     { "name": "attention to detail"},
@@ -27,6 +21,19 @@
     { "name": "frontend/fullstack experience"},
     { "name": "desire to wear many hats"}, 
     { "name": "desire to change the world"}
-  ]
+  ],
+  "particulars": [
+    { "name": "Experience with source control systems (Perforce, Subversion, Git)"},
+    { "name": "Experience with Linux"},
+    { "name": "Android app development"},
+    { "name": "Frontend developments skills (vanillajs, Angular, Angular2, React)"},
+    { "name": "Python development (Django, Flask)"}
+  ],
+  "closings": [
+  { "name": "Sincerely"},
+  { "name": "Regards"},
+  { "name": "Best"},
+  { "name": "Cheers"}
+]
 }
 
