@@ -17,8 +17,20 @@ var app = angular.module('myApp', [])
         $scope.body3 = $scope.bodies[2].name;
         $scope.closings = res.data.closings;
         $scope.closing = $scope.closings[0].name;
+        $scope.updateString();
       },
       function () {
         console.log("Error fetching json");
       });
+      
+      $scope.updateString = function() {
+        $scope.displayString = 'Dear ' + $scope.companyName + ',\n\n';
+        $scope.displayString += 'My ' + $scope.skill1 + ', ' + $scope.skill2 + ' and ' +  $scope.skill3 + ' ';
+        $scope.displayString += $scope.role + ' ' + $scope.position  + '.\n\n';
+        $scope.displayString += $scope.body1 + ' ' + $scope.body2 + ' ' + $scope.body3 + '\n\n';
+        $scope.displayString += 'Find attached a copy of my resume, and I look forward to hearing from you soon.\n\n';
+        $scope.displayString += $scope.closing + ',\n\n';
+        $scope.displayString += $scope.signature + '\n';
+      }
+
 });

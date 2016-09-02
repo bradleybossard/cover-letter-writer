@@ -21,31 +21,31 @@
       <div class="col-md-6">
         <h5>Company</h5>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Company Name" ng-model="companyName">
+          <input type="text" class="form-control" placeholder="Company Name" ng-model="companyName" ng-change="updateString()">
         </div>
 
         <h5>Skills</h5>
         <div class="form-group">
-          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill1">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill1" ng-change="updateString()">
             <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
           </select>
         </div>
 
         <div class="form-group">
-          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill2">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill2" ng-change="updateString()">
             <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
           </select>
         </div>
 
         <div class="form-group">
-          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill3">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="skill3" ng-change="updateString()">
             <option ng-repeat="skill in skills" value="{{skill.name}}">{{skill.name}}</option>
           </select>
         </div>
 
         <h5>Roles</h5>
         <div class="form-group">
-          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="role">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="role" ng-change="updateString()">
             <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
           </select>
         </div>
@@ -55,7 +55,7 @@
       <div class="col-md-6">
         <h5>Position</h5>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Position" ng-model="position">
+          <input type="text" class="form-control" placeholder="Position" ng-model="position" ng-change="updateString()">
         </div>
 
         <h5>Closing</h5>
@@ -73,21 +73,7 @@
     </div>
 
     <div class="row">
-    <textarea>
-Dear {{ companyName }},
-
-My {{ skill1 }}, {{ skill2 }} and {{ skill3 }} {{ role }} {{ position }}.
-
-{{ body1 }} {{ body2 }} {{ body3 }}
-
-
-Find attached a copy of my resume, and I look forward to hearing from you soon.
-
-{{ closing }},
-
-{{ signature }}
-
-    </textarea>
+    <textarea>{{ displayString }}</textarea>
     </div>
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>  
