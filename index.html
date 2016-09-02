@@ -60,14 +60,14 @@
 
         <h5>Closing</h5>
         <div class="form-group">
-          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="closing">
+          <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="closing" ng-change="updateString()">
             <option ng-repeat="closing in closings" value="{{closing.name}}">{{closing.name}}</option>
           </select>
         </div>
         
         <h5>Signature</h5>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Signature" ng-model="signature">
+          <input type="text" class="form-control" placeholder="Signature" ng-model="signature" ng-change="updateString()">
         </div>
       </div>
     </div>
