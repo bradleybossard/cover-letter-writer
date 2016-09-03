@@ -49,8 +49,10 @@
             <option ng-repeat="role in roles" value="{{role.name}}">{{role.name}}</option>
           </select>
         </div>
-      </div>
 
+
+
+      </div>
 
       <div class="col-md-6">
         <h5>Position</h5>
@@ -69,6 +71,27 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Signature" ng-model="signature" ng-change="updateString()">
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h5>Body Sentences</h5>
+      <div class="form-group">
+        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="body1" ng-change="updateString()">
+          <option ng-repeat="body in bodies" value="{{body.name}}">{{body.name}}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="body2" ng-change="updateString()">
+          <option ng-repeat="body in bodies" value="{{body.name}}">{{body.name}}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="body3" ng-change="updateString()">
+          <option ng-repeat="body in bodies" value="{{body.name}}">{{body.name}}</option>
+        </select>
       </div>
     </div>
 
