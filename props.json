@@ -32,11 +32,16 @@
     { "name": "Frontend developments skills (vanillajs, Angular, Angular2, React)"},
     { "name": "Python development (Django, Flask)"}
   ],
+  "closers": [
+  { "name": ""},
+  { "name": "If you think I could be a good match for the position or any others you are aware of, I would love to schedule a phone call and discuss it further."}
+]
   "closings": [
-  { "name": "Sincerely"},
-  { "name": "Regards"},
-  { "name": "Best"},
-  { "name": "Cheers"}
+  { "name": "Thank you for your time and consideration."},
+  { "name": "Sincerely,"},
+  { "name": "Regards,"},
+  { "name": "Best,"},
+  { "name": "Cheers,"}
 ]
 }
 

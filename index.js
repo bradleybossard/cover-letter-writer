@@ -31,7 +31,7 @@ var app = angular.module('myApp', [])
     $scope.displayString += $scope.role + ' ' + $scope.position  + '.\n\n';
     $scope.displayString += $scope.body1 + ' ' + $scope.body2 + ' ' + $scope.body3 + '\n\n';
     $scope.displayString += 'Find attached a copy of my resume, and I look forward to hearing from you soon.\n\n';
-    $scope.displayString += $scope.closing + ',\n\n';
+    $scope.displayString += $scope.closing + '\n\n';
     $scope.displayString += $scope.signature + '\n';
   }
 
