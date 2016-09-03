@@ -9,9 +9,12 @@
     { "name": "make me a well qualified candidate for the position of"}
   ],
   "bodies": [
+    { "name": ""},
     { "name": "For the past ten years, including five at Google, I have been exposed to a wide range of technologies."},
-    { "name": "Over the past ten years, including nearly five at Google and four at the digital agency, Aniden Interactive, I have been exposed to a wide range of technologies."},
-    { "name": "Particularly, I  feel my most relevant experience to the advertised position includesMost recently focused in on Frontend browser development."},
+    { "name": "A little about myself, I have roughly 10 years of software engineering experience, including 5 at Google."},
+    { "name": "Over the past ten years, including stints at Google and in the agency world, I have been exposed to a wide range of technologies."},
+    { "name": "In particular and most relevant to this position includes several Javascript frotend projects."},
+    { "name": "A short list of tools and technology I have some professional experience with are Javascript (frontend/backend), HTML/CSS, C/C++, Python, Java (Android), Linux, BASH, Nginx, Apache, Docker, Jenkins, JIRA and many others that I at least experimented with."},
     { "name": "Most recently, I laid out the architecture for an Angular/Django REST app for running dental practices."}
   ],
   "skills": [
