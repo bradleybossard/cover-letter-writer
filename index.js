@@ -1,6 +1,7 @@
 var app = angular.module('myApp', [])
 .controller('myCtrl', function($scope, $http) {
-  $http.get('props.json').then(
+  $scope.getData = function() {
+    $http.get('props.json').then(
       function (res) {
         $scope.companyName = res.data.companyName;
         $scope.position = res.data.position;
@@ -22,15 +23,23 @@ var app = angular.module('myApp', [])
       function () {
         console.log("Error fetching json");
       });
-      
-      $scope.updateString = function() {
-        $scope.displayString = 'Dear ' + $scope.companyName + ',\n\n';
-        $scope.displayString += 'My ' + $scope.skill1 + ', ' + $scope.skill2 + ' and ' +  $scope.skill3 + ' ';
-        $scope.displayString += $scope.role + ' ' + $scope.position  + '.\n\n';
-        $scope.displayString += $scope.body1 + ' ' + $scope.body2 + ' ' + $scope.body3 + '\n\n';
-        $scope.displayString += 'Find attached a copy of my resume, and I look forward to hearing from you soon.\n\n';
-        $scope.displayString += $scope.closing + ',\n\n';
-        $scope.displayString += $scope.signature + '\n';
-      }
+  }
+
+  $scope.updateString = function() {
+    $scope.displayString = 'Dear ' + $scope.companyName + ',\n\n';
+    $scope.displayString += 'My ' + $scope.skill1 + ', ' + $scope.skill2 + ' and ' +  $scope.skill3 + ' ';
+    $scope.displayString += $scope.role + ' ' + $scope.position  + '.\n\n';
+    $scope.displayString += $scope.body1 + ' ' + $scope.body2 + ' ' + $scope.body3 + '\n\n';
+    $scope.displayString += 'Find attached a copy of my resume, and I look forward to hearing from you soon.\n\n';
+    $scope.displayString += $scope.closing + ',\n\n';
+    $scope.displayString += $scope.signature + '\n';
+  }
+
+  $scope.init = function() {
+    new Clipboard('.btn');
+    $scope.getData();
+  }
+
+  $scope.init();
 
 });

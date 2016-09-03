@@ -96,10 +96,12 @@
     </div>
 
     <div class="row">
-    <textarea>{{ displayString }}</textarea>
+      <button class="btn" data-clipboard-target="#letter">Copy to Clipboard</button>
+      <textarea id="letter">{{ displayString }}</textarea>
     </div>
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
 
 <script src="index.js"></script>
 
