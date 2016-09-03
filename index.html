@@ -106,7 +106,13 @@
     </div>
 
     <div class="row">
-      <button class="btn" data-clipboard-target="#letter">Copy to Clipboard</button>
+      <div class="form-group">
+        <div class="btn-group pull-right" role="group" aria-label="...">
+          <button type="button" class="btn btn-default btn-small" data-clipboard-target="#letter">
+              <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Copy to Clipboard 
+          </button>
+        </div>
+      </div>
       <textarea id="letter">{{ displayString }}</textarea>
     </div>
   </div>
