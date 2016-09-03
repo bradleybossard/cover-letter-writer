@@ -29,7 +29,21 @@ var app = angular.module('myApp', [])
     $scope.displayString = 'Dear ' + $scope.companyName + ',\n\n';
     $scope.displayString += 'My ' + $scope.skill1 + ', ' + $scope.skill2 + ' and ' +  $scope.skill3 + ' ';
     $scope.displayString += $scope.role + ' ' + $scope.position  + '.\n\n';
-    $scope.displayString += $scope.body1 + ' ' + $scope.body2 + ' ' + $scope.body3 + '\n\n';
+
+    if ($scope.body1 != '') {
+      $scope.displayString += $scope.body1 + ' ';
+    }
+    if ($scope.body2 != '') {
+      $scope.displayString += $scope.body2 + ' ';
+    }
+    if ($scope.body3 != '') {
+      $scope.displayString += $scope.body3 + ' ';
+    }
+
+    // If there is atleast one body, start new paragraph.
+    if ($scope.body1 != '' || $scope.body2 != '' || $scope.body3 != '') {
+      $scope.displayString += '\n\n';
+    }
     $scope.displayString += 'Find attached a copy of my resume, and I look forward to hearing from you soon.\n\n';
     $scope.displayString += $scope.closing + '\n\n';
     $scope.displayString += $scope.signature + '\n';
