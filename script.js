@@ -3,6 +3,7 @@ var app = angular.module('myApp', [])
   $scope.getData = function() {
     $http.get('props.json').then(
       function (res) {
+        // Initialize fields
         $scope.companyName = res.data.companyName;
         $scope.position = res.data.position;
         $scope.signature = res.data.signature;
@@ -16,6 +17,8 @@ var app = angular.module('myApp', [])
         $scope.body1 = $scope.bodies[1].name;   // Skip first blank choice
         $scope.body2 = $scope.bodies[2].name;
         $scope.body3 = $scope.bodies[3].name;
+        $scope.closers = res.data.closers;
+        $scope.closer = $scope.closers[0].name;
         $scope.closings = res.data.closings;
         $scope.closing = $scope.closings[0].name;
         $scope.updateString();
@@ -55,7 +58,9 @@ var app = angular.module('myApp', [])
     if ($scope.body1 != '' || $scope.body2 != '' || $scope.body3 != '') {
       $scope.displayString += '\n\n';
     }
-    $scope.displayString += 'Find attached a copy of my resume, and I look forward to hearing from you soon.\n\n';
+
+    $scope.displayString += $scope.closer + '\n\n';
+
     $scope.displayString += $scope.closing + '\n\n';
     $scope.displayString += $scope.signature + '\n';
   }

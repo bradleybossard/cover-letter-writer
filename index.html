@@ -103,6 +103,13 @@
           <option ng-repeat="body in bodies" value="{{body.name}}">{{body.name}}</option>
         </select>
       </div>
+
+      <h5>Closers</h5>
+      <div class="form-group">
+        <select name="repeatSelect" id="repeatSelect" class="form-control" ng-model="closer" ng-change="updateString()">
+          <option ng-repeat="closer in closers" value="{{closer.name}}">{{closer.name}}</option>
+        </select>
+      </div>
     </div>
 
     <div class="row">

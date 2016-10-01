@@ -1,5 +1,4 @@
 {
-
   "companyName": "Google",
   "position": "Software Engineer",
   "signature": "Bradley",
@@ -12,9 +11,10 @@
     { "name": ""},
     { "name": "For the past ten years, including five at Google, I have been exposed to a wide range of technologies."},
     { "name": "A little about myself, I have roughly 10 years of software engineering experience, including 5 at Google."},
+    { "name": "In recent years, I have come to focus more on frontend development and Javascript, and have exposure to a number of frameworks including Angular, React and Vue, and tools such as Typescript, Babel, and Webpack that come with the territory."},
     { "name": "Over the past ten years, including stints at Google and in the agency world, I have been exposed to a wide range of technologies."},
-    { "name": "In particular and most relevant to this position includes several Javascript frotend projects."},
-    { "name": "A short list of tools and technology I have some professional experience with are Javascript (frontend/backend), HTML/CSS, C/C++, Python, Java (Android), Linux, BASH, Nginx, Apache, Docker, Jenkins, JIRA and many others that I at least experimented with."},
+    { "name": "In particular and most relevant to this position, my experience at Aniden includes several Javascript frontend projects using the MEAN JS stack"},
+    { "name": "A short list of tools and technology I have some professional experience with are frontend Javascript, HTML/CSS, C/C++, Python, Java (Android), Linux, BASH, Nginx, Apache, Docker, Jenkins, JIRA and many others that I at least experimented with."},
     { "name": "Most recently, I laid out the architecture for an Angular/Django REST app for running dental practices."}
   ],
   "skills": [
