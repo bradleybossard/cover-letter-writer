@@ -10,16 +10,20 @@
   "bodies": [
     { "name": ""},
     { "name": "For the past ten years, including five at Google, I have been exposed to a wide range of technologies."},
+    { "name": "Over the past ten years, including stints at Google and in the agency world, I have been exposed to a wide range of technologies."},
     { "name": "A little about myself, I have roughly 10 years of software engineering experience, including 5 at Google."},
     { "name": "In recent years, I have come to focus more on frontend development and Javascript, and have exposure to a number of frameworks including Angular, React and Vue, and tools such as Typescript, Babel, and Webpack that come with the territory."},
-    { "name": "Over the past ten years, including stints at Google and in the agency world, I have been exposed to a wide range of technologies."},
+    { "name": "In recent years, I have come to focus more on frontend development and Javascript, as well as plain old Vanilla JS."},
+    { "name": "In recent years, I have come to focus more specifically on Javascript and Node, and have exposure to a number of frameworks including Angular, React and Vue, and tools such as Typescript, Babel, and Webpack that come with the territory."},
     { "name": "In particular and most relevant to this position, my experience at Aniden includes several Javascript frontend projects using the MEAN JS stack"},
     { "name": "A short list of tools and technology I have some professional experience with are frontend Javascript, HTML/CSS, C/C++, Python, Java (Android), Linux, BASH, Nginx, Apache, Docker, Jenkins, JIRA and many others that I at least experimented with."},
-    { "name": "Most recently, I laid out the architecture for an Angular/Django REST app for running dental practices."}
+    { "name": "Most recently, I laid out the architecture for an Angular/Django REST app for running dental practices."},
+    { "name": "Looking over your website, I'm impressed with your products and think I could be a real asset with my generalist background."}
   ],
   "skills": [
     { "name": ""},
     { "name": "diverse technical background"},
+    { "name": "strong Javascript experience"},
     { "name": "prior experience in academia"},
     { "name": "experience with scientific computing"},
     { "name": "prior experience working remotely"},
@@ -39,7 +43,8 @@
   "closers": [
   { "name": ""},
   { "name": "Find attached a copy of my resume in PDF format, and I look forward to hearing from you soon."},
-  { "name": "If you think I could be a good match for the position or any others you are aware of, I would love to schedule a phone call and discuss it further."}
+  { "name": "If you think I could be a good match for the position or any others you are aware of, I would love to schedule a phone call and discuss it further."},
+  { "name": "Find below a link to my resume. If you think I could be a good match for the position or any others you are aware of, I would love to schedule a phone call and discuss it further.\n\nhttp://bradleybossard.github.io/resume/"}
   ],
   "closings": [
     { "name": "Thank you for your time and consideration."},
